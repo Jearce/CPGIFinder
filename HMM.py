@@ -191,13 +191,13 @@ class HMM:
         emission = np.log(emissions)
 
         #initialize
-        for i,st in enumerate(self.states):
+        for i,st in enumerate(states):
             e = emission[observations[0],i]
             V[i,0] = e + math.log(initial_probs[st])
 
         #Fill V matrix
         for i in range(1,num_obs):
-            for l,state_l in enumerate(states):
+            for l in range(len(states)):
                 result = V[:,i-1]+transition[:,l]
 
                 V[l,i] = result.max()
