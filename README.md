@@ -1,5 +1,5 @@
 # CPGIFinder
-CPGIFinder predicts CpG islands in a given genomic sequence using Hidden MarvokModel as described by [Durbin et al](https://www.semanticscholar.org/paper/Biological-Sequence-Analysis%3A-Probabilistic-Models-Durbin-Eddy/571f5bbecd3a083a2bb6844f59a3f8cea237252e).
+CPGIFinder predicts CpG islands in a given genomic sequence using Hidden Marvok Model as described by [Durbin et al](https://www.semanticscholar.org/paper/Biological-Sequence-Analysis%3A-Probabilistic-Models-Durbin-Eddy/571f5bbecd3a083a2bb6844f59a3f8cea237252e).
 ## Prerequisites
 Python 3 is required.
 
