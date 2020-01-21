@@ -85,6 +85,7 @@ AL672171.8	68463	68618
 CPGIFinder is licensed under the GNU General Public License v3.0
 
 ## Acknowledgments
-Hidden Markov Model implementation was based on [mchmm](https://github.com/maximtrp/mchmm) and [cpg-island-prediction-HMM](https://github.com/devanshdalal/cpg-island-prediction-HMM).
+Hidden Markov Model implementation was based on [mchmm](https://github.com/maximtrp/mchmm) and [cpg-island-prediction-HMM](https://github.com/devanshdalal/cpg-island-prediction-HMM). Reading [Durbin et al](https://www.semanticscholar.org/paper/Biological-Sequence-Analysis%3A-Probabilistic-Models-Durbin-Eddy/571f5bbecd3a083a2bb6844f59a3f8cea237252e) inspired me to create this program and test what I understood. 
+
 
 
