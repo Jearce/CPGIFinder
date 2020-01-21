@@ -27,7 +27,7 @@ def parse_args():
                      locations of CpG islands.'''
 
     parser = argparse.ArgumentParser(
-    prog='CPGIFinder',
+    prog='CPGIFinder.py',
     usage='%(prog)s FASTA_FILE',
     description=description)
 
