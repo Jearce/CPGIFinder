@@ -101,6 +101,7 @@ class HMM:
             if kmer not in kmers:
                 kmers[kmer] = self.ZERO
                 
+        #calculate transition probabilities Akl/sum(Akl')
         for kmer,value in kmers.items():
             prob = value/sum((value for key,value in kmers.items() if kmer[0]==key[0]))
             base1,base2 = kmer
@@ -116,6 +117,8 @@ class HMM:
         Returns:
          dict of initial probabilities.
         '''
+
+        #mapping states to initial probabilities 
         total=len(list(filter(lambda base:base.islower(),labeled_sequence)))
         initial_matrix = {
             key:value/total 
@@ -133,6 +136,7 @@ class HMM:
          returns pandas data frame 
         '''
 
+        #Each state has probability 1 of emitting corresponding symbol
         emissions = {s:[1 if a.upper() == s.upper() else self.ZERO for a in 'ATCG'] for s in states}
         emission_matrix = pd.DataFrame(emissions,index=['A','T','C','G'])
         return  emission_matrix

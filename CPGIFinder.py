@@ -1,6 +1,8 @@
+#!/usr/bin/env python
 import argparse 
 import json
 import sys
+import os
 
 import numpy as np
 import pandas as pd
@@ -8,10 +10,11 @@ import pandas as pd
 import SeqHandler
 import HMM
 
+program_dir = os.path.dirname(os.path.realpath(__file__))
 
-TRANSITION_MATRIX = 'probability_matricies/transition_probabilites.csv'
-EMISSION_MATRIX = 'probability_matricies/emission_probabilites.csv'
-INITIAL_MATRIX = 'probability_matricies/initial_probabilites.json'
+TRANSITION_MATRIX = program_dir+'/probability_matricies/transition_probabilites.csv'
+EMISSION_MATRIX = program_dir+'/probability_matricies/emission_probabilites.csv'
+INITIAL_MATRIX = program_dir+'/probability_matricies/initial_probabilites.json'
 STATES = ['A','T','G','C','a','t','g','c']
 
 def parse_args():
